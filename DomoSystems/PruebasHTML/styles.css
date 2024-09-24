@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #DEE2E6;
+    width: 100vw;
+    height: 100vh;
+    color: #000000;
+}
+header{
+    background-color: #ADB5BD;
+    width: 100vw;
+    height: 8vh;
+    border-bottom: 1px solid #212529;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 6vw;
+}
+header img{
+    width: 360px;
+}
+ul li{
+    list-style:none;
+    padding: 0 5px;
+    font-size: 24px;
+    font-weight: 700;
+}
+ul li:not(:last-child){
+    border-right: 1px solid #212529;
+}
+ul{
+    display: flex;
+}
+main{
+    width: 100vw;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#galeria{
+    border:1px solid #212529;
+    width: 60vw;
+    height: 60%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.558), rgba(0, 0, 0, 0.558)), url("./background.jpg");
+    background-size: cover;
+    background-position:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#galeria h2{
+    color: #fff;
+}
+#galeria div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+    font-size: 30px;
+}
+#galeria div i{
+    background-color: #ffffff7d;
+    padding: 10px;
+    border-radius: 50%;
+}
+footer{
+    background-color: #ADB5BD;
+    width: 100vw;
+    height: 7vh;
+    border-top: 1px solid #212529;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 6vw;
+}
+.social i{
+    margin-right: 8px;
+}
