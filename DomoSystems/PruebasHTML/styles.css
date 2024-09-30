@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+.movil{
+    display: none;
+}
 body{
     background-color: #DEE2E6;
     width: 100vw;
@@ -20,7 +23,7 @@ header{
     padding: 0 6vw;
 }
 header img{
-    width: 360px;
+    width: 350px;
 }
 ul li{
     list-style:none;
@@ -64,6 +67,7 @@ main{
     font-size: 30px;
 }
 #galeria div i{
+    position: 
     background-color: #ffffff7d;
     padding: 10px;
     border-radius: 50%;
@@ -80,4 +84,16 @@ footer{
 }
 .social i{
     margin-right: 8px;
+}
+@media screen and (max-width:950px) {
+    .largo{
+        display: none;
+    }
+    .movil{
+        display: block;
+        font-size: 30px;
+    }
+    header img{
+        width: 60px;
+    }
 }
