@@ -5,49 +5,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="./script.js"></script>
 </head>
 
 <body>
     <table border="1" cellspacing="0" cellpadding="0" width="100%" rowpadding="30px">
         <tr bgcolor="lightgray">
         <td>
-            <form align="center">
+            <form align="center" onsubmit="informarUsuario()">
                     <b>
                         <font color="gray" align="center">Formulario Total</font>
                     </b>
                     <div align="right" bgcolor="red">
                         <label for="nombre">Nombre:</label>
-                        <input type="text" name="nombre" id="nombre" size="80px">
+                        <input type="text" name="nombre" id="nombre" size="80px" onblur="comprobarNombre(this)">
                     </div>
                     <br>
                     <div align="right">
                         <label for="apellidos">Apellidos:</label>
-                        <input type="text" name="apellidos" id="apellidos" size="80px">
+                        <input type="text" name="apellidos" id="apellidos" size="80px" onblur="comprobarApellido(this)">
                     </div>
                     <br>
                     <div align="right">
                         <label for="mail">e-mail:</label>
-                        <input type="email" name="mail" id="mail" size="80px">
+                        <input type="email" name="mail" id="mail" size="80px" onblur="comprobarMail(this)">
                     </div>
                     <br>
                     <div align="right">
                         <label for="dni">DNI:</label>
-                        <input type="text" name="dni" id="dni" size="80px">
+                        <input type="text" name="dni" id="dni" size="80px" onblur="comprobarDni(this)">
                     </div>
                     <br>
                     <div align="right">
                         <label for="password">Password:</label>
-                        <input type="text" name="password" id="password" size="80px">
+                        <input type="text" name="password" id="password" size="80px" onblur="comprobarPass(this)">
                     </div>
                     <br>
                     <div align="right">
                         <label for="password2">Repetir password:</label>
-                        <input type="text" name="password2" id="password2" size="80px">
+                        <input type="text" name="password2" id="password2" size="80px" onblur="comprobarRepetir(this)">
                     </div>
                     <br>
                     <div align="right">
                         <label for="ip">IP Equipo:</label>
-                        <input type="text" name="ip" id="ip" size="80px">
+                        <input type="text" name="ip" id="ip" size="80px" onblur="comprobarIp()">
                     </div>
                     <br>
                     <button align="center" size="180px">Enviar</button>
