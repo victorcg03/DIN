@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100vw;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: steelblue;
+}
+header ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 250px;
+}
+header h1{
+    color: #fff;
+    margin-bottom: 6px;
+}
+section{
+    width: 100vw;
+    padding: 20px 15px;
+}
+#bio p{
+    font-style: italic;
+}
+.project{
+    width: 100%;
+    padding: 15px;
+    background-color: rgba(114, 114, 114, 0.108);
+    margin-bottom: 30px;
+    border:1px solid rgba(114, 114, 114, 0.152);
+    border-radius: 2px;
+}
+.project h3{
+    color: steelblue;
+    margin-bottom: 9px;
+}
+form input{
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+    margin: 5px 0;
+    border:1px solid rgba(114, 114, 114, 0.152);
+}
+form button{
+    background-color: #007bff;
+    color: #fff;
+    width: 75px;
+    height: 35px;
+    border: none;
+}

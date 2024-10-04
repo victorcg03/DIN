@@ -1,0 +1,8 @@
+ul li{
+    color: orange;
+    list-style: square;
+}
+ol li{
+    color: purple;
+    list-style-type: decimal-leading-zero;
+}
