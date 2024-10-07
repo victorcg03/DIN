@@ -16,13 +16,13 @@ header h1{
 }
 header ul{
     list-style: none;
-    display: flex;
     position: absolute;
     width: 250px;
     left: calc(50vw - 125px);
 }
 header ul li{
     margin: 10px;
+    display: inline-block;
 }
 #bio, #projects, #contact{
     width: 100vw;
