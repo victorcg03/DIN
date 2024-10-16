@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100vw;
+    height: 120px;
+    background-color: #2C3E50;
+    color: #fff;
+    position: relative;
+}
+header h1{
+    position: absolute;
+    width: 400px;
+    height: 40px;
+    left: calc(50% - 200px);
+    top: calc(40px - 20px);
+
+}
+header ul{
+    position: absolute;
+    bottom: 20px;
+    left: calc(50% - 100px);
+    width: 200px;
+    display: flex;
+    list-style: none;
+}
+header ul li{
+    margin: 0 10px;
+}
+footer{
+    background-color: #2C3E50;
+    height: 70px;
+    width: 100vw;
+    position: absolute;
+    bottom: 0px;
+    color: #fff;
+}
+footer p{
+    position: relative;
+    top: calc(50% - 10px);
+    height: 20px;
+    left: calc(50% - 250px);
+    width: 500px;
+    text-align: center;
+}
+footer p::before{
+    content: '→';
+    color: #D37432;
+    margin-right: 3px;
+}
+footer p::after{
+    content: 'Victor Corral';
+    color: #3474A6;
+}

@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #3a3b3c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#main{
+    width: 80vw;
+    height: 80vh;
+    background-color: rgb(103, 103, 103);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+div{
+    border: 3px solid #000;
+}
+#div1{
+    background-color: beige;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+}
