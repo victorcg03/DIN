@@ -1,0 +1,24 @@
+:root{
+    --clr-negro: #39393A;
+    --clr-gris: #D1D5DE;
+    --clr-azulClaro: #90C2E7;
+    --clr-azulOscuro: #008DD5;
+    --clr-amarillo: #F4E76E;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: var(--clr-negro);
+    border-color: var(--clr-negro);
+    font-family: 'Calibri', sans-serif;
+}
+a{
+    text-decoration: none;
+    color:inherit;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}

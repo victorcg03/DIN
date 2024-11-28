@@ -1,0 +1,172 @@
+header{
+    
+    display: flex;
+    flex-direction: column;
+    img{
+        width: 130px;
+    }
+    .header-arriba{
+        display: grid;
+        grid-template-columns: 130px calc(100% - 130px);
+        align-items: center;
+        padding: 10px 5px;
+        justify-content: space-between;
+        .derecha{
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            gap: 7px;
+            form{
+                display: flex;
+                gap: 5px;
+                select{
+                    display: none;
+                }
+                > div{
+                    position: relative;
+                    input{
+                        padding: 2px 5px;
+                        border-radius: 5px;
+                        border: 1px solid ;
+                    }
+                    i{
+                        position: absolute;
+                        transform: translateY(-50%);
+                        top: 50%;
+                        right: 10px;
+                    }
+                }
+            }
+            > i{
+                font-size: 1.2rem;
+            }
+        }
+    }
+    nav{
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+        a{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--clr-azulClaro);
+            border: 1px solid var(--clr-negro);
+            text-align: center;
+            height: 50px;
+            position: relative;
+        }
+        a:hover, .activo{
+            background-color: var(--clr-azulOscuro);
+            color: var(--clr-amarillo);
+        }
+        a > div{
+            position: absolute;
+            width: 100%;
+            top: 100%;
+            background-color: var(--clr-azulOscuro);
+            display: none;
+            details{
+                border-block: 1px solid var(--clr-negro);
+                padding: 2px 5px;
+                summary{
+                    color: var(--clr-amarillo);
+                    font-size: 0.75rem;
+                    text-align: left;
+                }
+            }
+        }
+        a:hover > div{
+            display: block;
+        }
+    }
+}
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 2px solid var(--clr-negro);
+    padding: 5px 0;
+    gap: 5px 0;
+    .desplegable{
+        width: 90%;
+        border-bottom: 1px solid var(--clr-gris);
+        padding: 2px 5px;
+        summary {
+            cursor: pointer;
+            justify-content: space-between;
+            align-items: center;
+            display: flex;
+            min-width: fit-content;
+            width: 140px;
+        }
+
+        summary::after {
+            content: '▼';
+            font-size: 12px;
+        }
+
+        details[open] summary::after {
+            content: '▲';
+        }
+    }
+    .pagos-redes{
+        width: 92%;
+        display: flex;
+        justify-content: space-between;
+        img{
+            max-width: 125px;
+            height: auto;
+            object-fit:contain;
+        }
+    }
+}
+@media screen and (min-width:850px) {
+    header{
+        img{
+            width: 250px;
+        }
+        .header-arriba{
+            .derecha{
+                gap: 25px;
+                padding-inline: 15px;
+                form{
+                    
+                    select{
+                        display: block;
+                        border-radius: 5px;
+                        width: 12vw;
+                        min-width: fit-content;
+                        font-size: 1.6rem;
+                    }
+                    input{
+                        width: 30vw;
+                        font-size: 1.6rem;
+                    }
+                }
+                > i{
+                    font-size: 2rem;
+                }
+            }
+        }
+        nav{
+            a{
+                border: 2px solid;
+                height: 70px;
+                font-size: 1.6rem;
+            }
+            a > div{
+                width: 65%;
+                position: absolute;
+                right: 0px;
+                font-size: 1.2rem;
+                details{
+                    summary{
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
