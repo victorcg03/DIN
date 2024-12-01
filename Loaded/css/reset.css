@@ -18,7 +18,14 @@ a{
     color:inherit;
 }
 body{
+    max-width: 1800px;
+    margin: auto;
+    padding: 0;
     height: 100vh;
     display: flex;
     flex-direction: column;
+}
+main{
+    flex: 1;
+    overflow-y: auto;
 }

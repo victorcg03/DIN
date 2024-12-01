@@ -1,7 +1,8 @@
 header{
-    
     display: flex;
     flex-direction: column;
+    position: sticky;
+    top: 0px;
     img{
         width: 130px;
     }
@@ -51,7 +52,7 @@ header{
             justify-content: center;
             align-items: center;
             background-color: var(--clr-azulClaro);
-            border: 1px solid var(--clr-negro);
+            border: 1px solid var(--clr-negro) !important;
             text-align: center;
             height: 50px;
             position: relative;
@@ -89,6 +90,8 @@ footer{
     border-top: 2px solid var(--clr-negro);
     padding: 5px 0;
     gap: 5px 0;
+    position: sticky;
+    bottom: 0px;
     .desplegable{
         width: 90%;
         border-bottom: 1px solid var(--clr-gris);
