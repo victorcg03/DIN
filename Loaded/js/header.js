@@ -18,9 +18,9 @@ window.addEventListener('load', ()=>{
             </div>
         </div>
         <nav>
-            <a href="/">Inicio</a>
-            <a href="/catalogo.html">Catálogo</a>
-            <a href="/novedades.html">Novedades 
+            <a href="./">Inicio</a>
+            <a href="./catalogo.html">Catálogo</a>
+            <a href="./novedades.html">Novedades 
             <div class="novedades-desplegable">
                 <details>
                     <summary>Smartphones</summary>
@@ -33,8 +33,8 @@ window.addEventListener('load', ()=>{
                 </details>
             </div>
             </a>
-            <a href="/ofertas.html">Ofertas</a>
-            <a href="/nosotros.html">Sobre nosotros</a>
+            <a href="./ofertas.html">Ofertas</a>
+            <a href="./nosotros.html">Sobre nosotros</a>
         </nav>
     </header>`
     const footer = 
@@ -64,10 +64,12 @@ window.addEventListener('load', ()=>{
 
     const links = document.querySelectorAll('nav a');
 
-    const ventanaActual = window.location.pathname;
-
+    const ventanaActual = window.location.pathname.split('/');
+    console.log(ventanaActual);
+    
     links.forEach(link => {
-        if (link.getAttribute('href') === ventanaActual) {
+        let linkk = link.getAttribute('href').split('/');
+        if (linkk[linkk.length-1] === ventanaActual[ventanaActual.length-1]) {
             link.classList.add('activo');
         }
     });
