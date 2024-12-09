@@ -14,7 +14,7 @@ window.addEventListener('load', ()=>{
                     </div>
                 </form>
                 <i class="fa-solid fa-user"></i>
-                <i class="fa-solid fa-shopping-cart"></i>
+                <a href="./carrito.html"><i class="fa-solid fa-shopping-cart"></i></a>
             </div>
         </div>
         <nav>

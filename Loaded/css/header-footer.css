@@ -40,7 +40,7 @@ header{
                     }
                 }
             }
-            > i{
+            >i,a i{
                 font-size: 1.2rem;
             }
         }
@@ -148,7 +148,7 @@ footer{
                         font-size: 1.6rem;
                     }
                 }
-                > i{
+                >i, a i{
                     font-size: 2rem;
                 }
             }
